@@ -8,7 +8,7 @@
 
 using namespace std;
 
-// Struct for a single color
+// Struct for a single color; stores RGB vals
 struct Color
 {
     int r;
@@ -35,11 +35,11 @@ int main()
     }
 
     // Display in formatted table
-    cout << setw(8) << "Color#" << setw(5) << "R" << setw(5) << "G" << setw(5) << "B" << endl;
-
+    cout << setw(9) << "Color#" << setw(5) << "R" << setw(5) << "G" << setw(5) << "B" << endl;
+    cout << setw(9) << "--------" << setw(5) << "----" << setw(5) << "----" << setw(5) << "----" << endl;
     for (int i = 0; i < colors.size(); i++)
     {
-        cout << setw(8) << i + 1 << setw(5) << colors[i].r << setw(5) << colors[i].g << setw(5) << colors[i].b << endl;
+        cout << setw(9) << i + 1 << setw(5) << colors[i].r << setw(5) << colors[i].g << setw(5) << colors[i].b << endl;
     }
 
 }
