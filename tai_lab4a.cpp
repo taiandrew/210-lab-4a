@@ -34,7 +34,13 @@ int main()
         colors.push_back(c);
     }
 
-    // Display
+    // Display in formatted table
+    cout << setw(8) << "Color#" << setw(5) << "R" << setw(5) << "G" << setw(5) << "B" << endl;
+
+    for (int i = 0; i < colors.size(); i++)
+    {
+        cout << setw(8) << i + 1 << setw(5) << colors[i].r << setw(5) << colors[i].g << setw(5) << colors[i].b << endl;
+    }
 
 }
 
