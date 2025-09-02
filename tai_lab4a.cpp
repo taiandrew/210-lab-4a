@@ -2,6 +2,7 @@
 // IDE: Visual Studio Code
 
 #include <cstdlib>
+#include <ctime>
 #include <iostream>
 #include <iomanip>
 #include <vector>
@@ -25,6 +26,7 @@ Color createColor();
 int main()
 {
     // Randomly choose 25-50 colors to generate and store
+    srand(time(0));
     int nColors = rand() % 26 + 25;
     vector<Color> colors;
 
