@@ -24,8 +24,17 @@ Color createColor();
 // -------
 int main()
 {
-    // Randomly choose 25-50 colors to generate
+    // Randomly choose 25-50 colors to generate and store
     int nColors = rand() % 26 + 25;
+    vector<Color> colors;
+
+    for (int i = 0; i < nColors; i++)
+    {
+        Color c = createColor();
+        colors.push_back(c);
+    }
+
+    // Display
 
 }
 
